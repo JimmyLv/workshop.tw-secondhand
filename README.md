@@ -12,12 +12,13 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## TODOs
 
-- [ ] TypeScript, React, Redux, Rx knowledge basic (Learning materials)
+- [ ] TypeScript, React, Redux(*), Rx(*) knowledge basic (Learning materials)
 - [ ] Go through codebase and setup development infrastructure
 - [ ] Go through UX design & Split React components
 - [ ] showcase ready
 
 ## Getting Start
+
 ```bash
 git clone git@github.com:JimmyLv/workshop.tw-secondhand.git
 cd workshop.tw-secondhand && npm install # prefer node@6, npm@5

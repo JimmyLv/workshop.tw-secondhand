@@ -4,7 +4,7 @@ import app from '../modules/app/reducer';
 import user from '../modules/user/reducer';
 
 export default {
-    app,
-    user,
-    router,
+  app,
+  user,
+  router,
 };
