@@ -11,6 +11,7 @@
     "@types/react-router": "^4.0.12",
     "@types/react-router-redux": "^5.0.3",
     "@types/redux-storage": "^4.0.7",
+    "antd-mobile": "^1.6.0",
     "history": "^4.6.0",
     "isomorphic-fetch": "^2.2.1",
     "most": "^1.4.1",
@@ -36,7 +37,8 @@
     "husky": "^0.14.1",
     "react-addons-test-utils": "15.4.2",
     "react-scripts-ts-tw": "^1.0.7",
-    "typescript": "2.3.4"
+    "typescript": "2.3.4",
+    "@storybook/react": "^3.2.0"
   },
   "scripts": {
     "prepush": "CI=true npm test",
@@ -45,6 +47,8 @@
     "c": "react-scripts-ts-tw init",
     "test": "react-scripts-ts-tw test --env=jsdom",
     "eject": "react-scripts-ts-tw eject",
-    "cover": "react-scripts-ts-tw test --env=jsdom --coverage"
+    "cover": "react-scripts-ts-tw test --env=jsdom --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }
