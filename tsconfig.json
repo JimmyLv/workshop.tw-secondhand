@@ -6,7 +6,6 @@
     "lib": ["es6", "dom"],
     "sourceMap": true,
     "allowJs": true,
-    "jsx": "react",
     "moduleResolution": "node",
     "declaration": false,
     "rootDir": "src",
@@ -18,6 +17,12 @@
     "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": true,
     "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "src/*"]
+    },
+    "jsx": "preserve",
     "typeRoots": ["types", "node_modules/@types"]
   },
   "include": [
@@ -31,6 +36,7 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/setupTests.ts"
+    "src/setupTests.ts",
+    "config-overrides.js"
   ]
 }

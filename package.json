@@ -48,8 +48,8 @@
   },
   "scripts": {
     "prepush": "CI=true npm test",
-    "start": "react-scripts-ts-tw start",
-    "build": "react-scripts-ts-tw build",
+    "start": "BROWSER=none react-app-rewired start --scripts-version react-scripts-ts-tw",
+    "build": "react-app-rewired build --scripts-version react-scripts-ts-tw",
     "c": "react-scripts-ts-tw init",
     "test": "react-scripts-ts-tw test --env=jsdom",
     "eject": "react-scripts-ts-tw eject",

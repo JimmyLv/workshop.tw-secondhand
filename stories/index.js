@@ -3,9 +3,12 @@ import { linkTo } from '@storybook/addon-links'
 
 import { storiesOf } from '@storybook/react'
 import { Welcome } from '@storybook/react/demo'
-import Button from 'antd-mobile/lib/button/index.web'
 import 'antd-mobile/dist/antd-mobile.css'
+
+import Button from 'antd-mobile/es/button/index.web'
+import Card from 'antd-mobile/es/card/index.web'
 import React from 'react'
+
 import Logo from '../src/components/Logo/Logo'
 
 storiesOf('Welcome', module)
@@ -14,7 +17,19 @@ storiesOf('Welcome', module)
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>)
-  .add('with AddProduct', () => <Button type={'warning'} size={'small'} onClick={() => alert('HelloWorld!')}>Add Product</Button>)
+  .add('with AddProduct', () => <Button type={'warning'} size={'small'} onClick={() => alert('HelloWorld!')}>Add
+    Product</Button>)
 
 storiesOf('Image', module)
-  .add('with Logo', () => <Button onClick={action('clicked')}><Logo /></Button>)
+  .add('with Logo', () => <Logo />)
+  .add('with Card', () => <Card>
+    <Card.Header
+      title="This is title"
+      thumb="https://blog.jimmylv.info/public/img/%E5%89%8D%E7%AB%AF.svg"
+      extra={<span>this is extra</span>}
+    />
+    <Card.Body>
+      <div>This is content of `Card`</div>
+    </Card.Body>
+    <Card.Footer content="footer content" extra={<div>extra footer content</div>} />
+  </Card>)

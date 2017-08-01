@@ -1,12 +1,12 @@
+import Button from 'antd-mobile/es/button/index.web';
 import * as React from 'react';
 import { connect, DispatchProp } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { push } from 'react-router-redux';
-import * as Components from '../../../components';
 
+import * as Components from '../../../components';
 import * as D from '../../../definitions';
 import { userLogin } from '../../../modules/user/actions';
-
 import './HomePage.css';
 
 type HomePageProps<S> = DispatchProp<S> & RouteComponentProps<S> & {
@@ -31,7 +31,7 @@ const HomePage = (props: HomePageProps<object>) => {
       </button>
       <p>
         <button onClick={() => dispatch(push('about-us'))}>Go to About Us</button>
-        <button onClick={() => alert('HelloWorld!')}>Hello !World!</button>
+        <Button type="primary" onClick={() => alert('HelloWorld!')}>Click me!</Button>
       </p>
     </div>
   );
