@@ -31,6 +31,7 @@ const HomePage = (props: HomePageProps<object>) => {
       </button>
       <p>
         <button onClick={() => dispatch(push('about-us'))}>Go to About Us</button>
+        <button onClick={() => alert('HelloWorld!')}>Hello !World!</button>
       </p>
     </div>
   );
