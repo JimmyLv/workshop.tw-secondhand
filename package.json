@@ -47,7 +47,6 @@
     "typescript": "2.3.4"
   },
   "scripts": {
-    "prepush": "CI=true npm test",
     "start": "BROWSER=none react-app-rewired start --scripts-version react-scripts-ts-tw",
     "build": "react-app-rewired build --scripts-version react-scripts-ts-tw",
     "c": "react-scripts-ts-tw init",
