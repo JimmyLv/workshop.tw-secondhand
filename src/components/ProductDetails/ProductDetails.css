@@ -1,0 +1,33 @@
+.description {
+  font-size: 14px;
+  margin: 20px;
+}
+
+.product-img {
+  height: 200px;
+  width: 100%;
+  padding: 2% 5%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.buyerIcon {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.left-box {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin: 20px;
+}
+
+.right-box {
+  display: inline-block;
+  width: 140px;
+  margin: 20px;
+  font-size: 14px;
+}
