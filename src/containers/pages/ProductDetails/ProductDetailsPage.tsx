@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { connect, DispatchProp } from 'react-redux';
+import {connect, DispatchProp} from 'react-redux';
 
 import './ProductDetailsPage.css';
-import { RouteComponentProps } from 'react-router';
+import {RouteComponentProps} from 'react-router';
 import ProductDetails from '../../../components/ProductDetails/ProductDetails';
 import Button from '../../../components/Button/Button';
-import { push } from 'react-router-redux';
+import {push} from 'react-router-redux';
 import Header from '../../../components/Header/Header';
+// import {NavTab} from "../../../components/Footer/NavTab";
 
 const info = {
   model: '520P13C',
@@ -35,7 +36,9 @@ const ProductDetailsPage = (props: DispatchProp<object> & RouteComponentProps<ob
       />
         <Button text="立即购买" handleClick={() => props.dispatch(push('/login'))}/>
       </div>
+      {/*<NavTab/>*/}
     </div>
+
   );
 };
 

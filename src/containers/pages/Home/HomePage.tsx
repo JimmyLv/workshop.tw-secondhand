@@ -6,7 +6,6 @@ import { push } from 'react-router-redux';
 
 import * as Components from '../../../components';
 import * as D from '../../../definitions';
-import { userLogin } from '../../../modules/user/actions';
 import './HomePage.css';
 
 type HomePageProps<S> = DispatchProp<S> & RouteComponentProps<S> & {
@@ -26,12 +25,14 @@ const HomePage = (props: HomePageProps<object>) => {
       </p>
       <p>{user.name ? `User Name: ${user.name}` : 'No User Name.'}</p>
 
-      <button onClick={() => dispatch(userLogin({ username: 'admin', password: 'admin' }))}>
+      <button onClick={() => dispatch(push(('login')))}>
         Login and get User Name
       </button>
       <p>
         <button onClick={() => dispatch(push('about-us'))}>Go to About Us</button>
         <Button type="primary" onClick={() => alert('HelloWorld!')}>Click me!</Button>
+        <Button onClick={() => dispatch(push('my-product'))}>go to my product</Button>
+        <Button onClick={() => dispatch(push('upload-product'))}>upload product</Button>
       </p>
     </div>
   );

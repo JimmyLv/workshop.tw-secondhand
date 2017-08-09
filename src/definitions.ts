@@ -24,6 +24,14 @@ export interface UserForLogin {
   password: string;
 }
 
+export interface Product {
+  img: string;
+  name: string;
+  price: string;
+  status: string;
+  details: string;
+}
+
 // ACTION CREATORS
 
 
